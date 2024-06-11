@@ -5,14 +5,15 @@ import CharacterView from './components/CharacterView';
 import './App.css';
 
 const App = () => (
-    <Router>
-        <Routes>
-            <Route path="/" element={<CharacterListView />} />
-            <Route path="/character/:id" element={<CharacterView />} />
-        </Routes>
-    </Router>
+  <Router basename="/Rick-Morty">
+    <Routes>
+      <Route path="/" element={<CharacterListView />} />
+      <Route path="/character/:id" element={<CharacterView />} />
+    </Routes>
+  </Router>
 );
 
 export default App;
+
 
 
